@@ -1,0 +1,123 @@
+/* src/components/SuperAdminForm.css */
+
+.animated-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(270deg, #2332fb, #000000);
+  background-size: 400% 400%;
+    background: url('D:\emptax (2)\src\pexels-michaela-87369-295826 (3).jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.form-container {
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(153, 151, 151, 0.85);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background: url('D:\emptax (2)\src\pexels-hngstrm-1939485.jpg');
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  opacity: 0;
+  animation: fadeInDown 1s forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.input-field {
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.2s;
+  transition: transform 0.2s;
+}
+
+.input-field:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.input-field:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.input-field:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.input-field:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.input-field:nth-child(6) {
+  animation-delay: 0.7s;
+}
+
+.input-field:nth-child(7) {
+  animation-delay: 0.8s;
+}
+
+.input-field:focus-within {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.9s;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #ff7e5f;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
